@@ -5,7 +5,7 @@ function render (pageDiv) {
     if (contentDiv.contains(directChild))
         contentDiv.removeChild(directChild);
     contentDiv.appendChild(pageDiv);
-
+    console.log("test");
 }
 
 
