@@ -1,6 +1,7 @@
 import "./style.css";
 import {createHome} from "./home.js";
 import {contentDiv, render, directChild} from "./render.js";
-const page = createHome();
-render(page);
+
+
+render(createHome());
 
