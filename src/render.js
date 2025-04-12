@@ -1,9 +1,7 @@
 
-
-const contentDiv = document.querySelector("#content");
-const directChild = document.querySelector("#content > div")
-
 function render (pageDiv) {
+    const contentDiv = document.querySelector("#content");
+    const directChild = contentDiv.querySelector(":scope > div")
     if (contentDiv.contains(directChild))
         contentDiv.removeChild(directChild);
     contentDiv.appendChild(pageDiv);
@@ -11,4 +9,4 @@ function render (pageDiv) {
 }
 
 
-export {contentDiv, render, directChild}
+export {render}
